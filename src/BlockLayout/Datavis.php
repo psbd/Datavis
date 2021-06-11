@@ -1,6 +1,9 @@
 <?php
-namespace Datavis\BlockLayout;
 
+namespace Datavis\BlockLayout;
+//this is a view helper useful for block layout
+//used internally for site page public and admin pages
+//I think we do not need to modify this as for now. 
 use Datavis\Api\Representation\DatavisVisRepresentation;
 use Omeka\Api\Representation\SiteRepresentation;
 use Omeka\Api\Representation\SitePageRepresentation;
@@ -17,8 +20,11 @@ class Datavis extends AbstractBlockLayout
         return 'Data visualization'; // @translate
     }
 
-    public function form(PhpRenderer $view, SiteRepresentation $site,
-        SitePageRepresentation $page = null, SitePageBlockRepresentation $block = null
+    public function form(
+        PhpRenderer $view,
+        SiteRepresentation $site,
+        SitePageRepresentation $page = null,
+        SitePageBlockRepresentation $block = null
     ) {
         $vises = $view->api()->search('datavis_visualizations', [
             'has_diagram_type' => true,

@@ -2,6 +2,9 @@
 
 namespace Datavis;
 //Includes all the configurations for the module
+//this is a keyed array that should be returned!
+//if you look at the getConfig() method in Module.php,
+//this file is loaded.
 use Laminas\Router\Http;
 
 return [
@@ -105,7 +108,8 @@ return [
             ],
         ],
     ],
-    'router' => [
+    'router' => [ //used to define connections between URL paths and
+        //the controllers and actions that handle them
         'routes' => [
             'admin' => [
                 'child_routes' => [

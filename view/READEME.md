@@ -1,0 +1,1 @@
+This folder always has a subdirectory whose name is derived from the name of the Module (Datavis in this case), but with a small letter as the first character. All the view scripts of the module are placed inside this subfolder.
