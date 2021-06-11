@@ -1,6 +1,7 @@
 <?php
-namespace Datavis;
 
+namespace Datavis;
+//Includes all the configurations for the module
 use Laminas\Router\Http;
 
 return [
