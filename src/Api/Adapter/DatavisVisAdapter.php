@@ -1,4 +1,5 @@
 <?php
+
 namespace Datavis\Api\Adapter;
 
 use DateTime;

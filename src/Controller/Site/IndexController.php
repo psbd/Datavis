@@ -1,6 +1,8 @@
 <?php
-namespace Datavis\Controller\Site;
 
+namespace Datavis\Controller\Site;
+//View Model: used to send data to views for display
+//as seen here, created in a controller's action, and returned from there
 use DateTime;
 use Laminas\Mvc\Controller\AbstractActionController;
 use Laminas\View\Model\ViewModel;
